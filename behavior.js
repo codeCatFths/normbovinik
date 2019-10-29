@@ -19,7 +19,7 @@ function getInfoTwo()
 
 function getInfoThree()
 {
-    document.getElementById( "worldCaption" ).innerHTML = "Norm is visiting his friends from high school up in northern California for his 10 year high school reunion and taking a quick day trip to MacKerricher State Park near Fort Bragg.";
+    document.getElementById( "worldCaption" ).innerHTML = "Norm is visiting his friends from high school up in northern California for his 10 year high school reunion and taking a quick day trip to MacKerricher State Park near Fort Bragg. They like to camp at the State Park and enjoy the calm and quiet. Norm loves to walk the nature trails on top of the bluffs at the State Park and watch the sea lions frolick in the waves crashing below.";
     
     document.getElementById( "worldImage" ).src = "images/carrc-p02p03c.jpg";
 } // end getInfoThree()
