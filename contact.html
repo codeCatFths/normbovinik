@@ -1,47 +1,106 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 
 <html>
+    
     <head>
+        
+        <title>Contact | Ten Things I Learned About Norm B Ovinik</title>
+        <link rel="icon" href="images/normeyesicon64.gif" type="image/gif">
+        
+        <link href="format.css" rel="stylesheet">
+        <script src="behavior.js"></script>
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
             
-        <title>Contact | Ten Things I Learned About Norm B Ovinik</title>
-        
-        <link href="format.css" rel="stylesheet">
-	<link rel="icon" href="images/normeyesicon64.gif" type="image/gif">
-        <script src="behavior.js"></script>
     </head>
+    
+    <style>
+        .container /* Groups the image, the rollover placeholder and caption text */
+        {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    
+        .image /* Default image appearance */
+        {
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+    
+        .middle /* Placeholder for floating text on rollover */
+        {
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            
+            opacity: 0;
+            
+            transition: .5s ease;
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%)
+        }
+    
+        .container:hover .image /* Image fades when rollover and text appears */
+        {
+            opacity: 0.5;
+        }
+    
+        .container:hover .middle /* Box in which text appears */
+        {
+            opacity: 1;
+        }
+    
+        .text /* Caption text in hover box */
+        {
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            
+            padding: 4px 4px;
+            
+            background-color: #4CAF50;
+        }
+    </style>
     
     <body>
         
         <div id="main">
+            
             <h1>Ten Things I Learned About Norm</h1>
             
-            <p>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="world.html">World</a> |
-            <a href="tenthings.html">Ten Things</a> |
-            Contact
-            </p>
+            <div class="navigation">
+                <a href="index.html" title="Back to the Home page">Home</a> |
+                <a href="about.html" title="Find out about Norm">About</a> |
+                <a href="world.html" title="Explore Norm's world">World</a> |
+                <a href="tenthings.html" title="Some things I learned about Norm">Ten Things</a> |
+                Contact
+            </div>
 			
             <h2>Contact</h2>
 			
             <p>
-				<strong>
-					If you see errors or have technical diffulty viewing this site, <br>please contact webmaster via email below...
-				</strong>
+				<em>
+					If you see errors or have technical difficulty viewing this site, please contact webmaster via email below...
+				</em>
 			</p>
 			
-			<p><a href="mailto:cmcintyre@vcccd.edu">cmcintyre@vcccd.edu</a></p>
-			
-			<figure>
-				<img id="contactImage" src="images/NormyrainwetBW.jpg" />
-				<br>
-				<figcaption>Inspiration for the Norm B Ovinik Character</figcaption>
-            </figure>
-			
-            <hr>
+			<p><a href="mailto:cmcintyre@vcccd.edu?subject=Technical%20issue%20on%20website">cmcintyre@vcccd.edu</a></p>
+            
+            <div class="container">
+                <img id="contactImage" class="image" src="images/NormyrainwetBW.jpg" alt="Norm B Ovinik Inspiration Image of Norm the Cat" />
+                    <div class="middle">
+                        <div class="text">
+                            Inspiration for the Norm B Ovinik Character<br>
+                            Our cat Norman - a big cuddle fluffer
+                        </div>
+                    </div>
+            </div>
+            
+            <br>
+
         </div>
         
         <footer>
@@ -52,4 +111,5 @@
         </footer>
         
     </body>
+    
 </html>

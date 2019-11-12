@@ -1,10 +1,11 @@
 body
 {
     background-color: #6599ce;
+    
     background-image: URL("images/seaglassbackground-blue.jpg");
     background-attachment: fixed;
     
-    font-family: futura;
+    font-family: futura, "arial MT", arial, "sans serif";
 }
 
 h1
@@ -33,32 +34,36 @@ img
 
 }
 
+#galleryBlock
+{
+    text-align: center;
+}
 .gallery
 {
-    margin: 10px;
-    padding: 10px;
     border: solid 1px;
     border-left-color: #139b48;
     border-top-color: #139b48;
     border-right-color: #6599ce;
     border-bottom-color: #6599ce;
     
+    margin: 10px;
+    padding: 10px;
+    
     opacity: 1;
     filter: alpha(opacity=100); /* For IE8 and earlier */
-    
-    
 }
 
 .gallery:hover
 {
     transform: scale(1.5, 1.5);
+    
     opacity: .6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
 ol
 {
-    
+
 }
 
 li
@@ -96,6 +101,7 @@ figcaption
 button
 {
 	background-color: #139b48;
+    
 	color: white;
 	font-weight: bold;
 }
@@ -103,8 +109,9 @@ button
 footer
 {
     text-align: center;
+    
     color: white;
-    font-family: papyrus;
+    font-family: papyrus, "sans serif";
     font-weight: bold;
 }
 
@@ -113,26 +120,28 @@ footer
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px 20px 5px 20px;
-    
-    background-color: #e5e5e4;
-    background-image: linear-gradient(to bottom, white, #e5e5e4);
-    opacity: .985;
     
     border: solid;
     border-color: slategrey;
     border-style: outset;
     border-radius: 0px 24px;
-    
     box-shadow: 3px 3px 6px #000000;
+    
+    background-color: #e5e5e4;
+    background-image: linear-gradient(to bottom, white, #e5e5e4);
+    opacity: .985;
+    
+    padding: 5px 20px 5px 20px;
 }
 
 #homeImage
 {
     display: block;
+    width: 100%;
+    height: auto;
+    
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
     
     border-radius: 0px 24px;
     box-shadow: 3px 3px 6px #6599ce;
@@ -141,9 +150,11 @@ footer
 #aboutImage
 {
     display: block;
+    width: 50%;
+    height: auto;
+    
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
     
     border-radius: 0px 24px;
     box-shadow: 3px 3px 6px #6599ce;
@@ -152,12 +163,20 @@ footer
 #worldImage
 {
     display: block;
+    width: 100%;
+    height: auto;
+    
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    
+
     border-radius: 0px 24px;
     box-shadow: 3px 3px 6px #6599ce;
+}
+
+.clickLarger
+{
+    color: #139b48;
+    text-align:center; font-size: 8pt;
 }
 
 #worldButtons
@@ -179,9 +198,11 @@ footer
 #contactImage
 {
     display: block;
+    width: 100%;
+    height: auto;
+    
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
     
     border-radius: 0px 24px;
     box-shadow: 3px 3px 6px #6599ce;
@@ -190,9 +211,11 @@ footer
 #tenThingsImage
 {
     display: block;
+    width: 50%;
+    height: auto;
+    
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
     
     border-radius: 0px 24px;
     box-shadow: 3px 3px 6px #6599ce;
@@ -200,7 +223,7 @@ footer
 
 #footertext
 {
+    font-size: 16pt;
     color: white;
     text-shadow: 3px 6px 6px #000000;
-    font-size: 16pt;
 }

@@ -1,29 +1,34 @@
 <!DOCTYPE>
+<!-- Why would adding "space html" to the DOCTYPE tag cause the image CSS to break only on THIS page? -->
 
 <html>
+    
     <head>
+        
+        <title>Ten Things | Ten Things I Learned About Norm B Ovinik</title>
+        <link rel="icon" href="images/normeyesicon64.gif" type="image/gif">
+            
+        <link href="format.css" rel="stylesheet">
+        <script src="behavior.js"></script>
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
             
-        <title>Ten Things | Ten Things I Learned About Norm B Ovinik</title>
-        
-        <link href="format.css" rel="stylesheet">
-	<link rel="icon" href="images/normeyesicon64.gif" type="image/gif">
-        <script src="behavior.js"></script>
     </head>
     
     <body>
         
         <div id="main">
+            
             <h1>Ten Things I Learned About Norm</h1>
             
-            <p>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="world.html">World</a> |
-            Ten Things |
-            <a href="contact.html">Contact</a>
-            </p>
+            <div class="navigation">
+                <a href="index.html" title="Back to the Home page">Home</a> |
+                <a href="about.html" title="Find out about Norm">About</a> |
+                <a href="world.html" title="Explore Norm's world">World</a> |
+                Ten Things |
+                <a href="contact.html" title="Contact the web mistress">Contact</a>
+            </div>
 			
             <h2>Ten Things</h2>
 			
@@ -43,12 +48,11 @@
 			</ol>
 			
 			<figure>
-			<img id="tenthingsImage" src="images/norm_pencilwithpaths_version4.jpg" />
+			<img id="tenthingsImage" src="images/norm_pencilwithpaths_version4.jpg" title="Original Pencil Sketch - Digitizing with Pen Tool" alt="Original Pencil Sketch - Digitizing with Pen Tool" />
 				<br>
 				<figcaption>Original Pencil Sketch - Digitizing with Pen Tool</figcaption>
 			</figure>
-            
-            <hr>
+
         </div>
         
         <footer>
@@ -59,4 +63,5 @@
         </footer>
         
     </body>
+    
 </html>
